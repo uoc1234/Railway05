@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS Data_Types;
+CREATE DATABASE Data_Types;
+USE Data_Types;
+-- Tối ưu hóa dữ liệu
+CREATE TABLE Trainee(
+ID					SMALLINT PRIMARY KEY AUTO_INCREMENT,
+`Name`				VARCHAR(50) NOT NULL,CHECK( LENGTH(`Name`)>=6),
+`Code`				VARCHAR(50),
+ModifiedDate		TIMESTAMP
+);

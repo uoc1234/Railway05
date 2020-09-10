@@ -1,0 +1,33 @@
+-- Question 1: Vi?t l?nh d? l?y ra danh sách nhân viên và thông tin phòng ban c?a h?
+SELECT 	Email, Username	, FullName, PositionID, CreateDate, A.DepartmentID, D.DepartmentName
+FROM 	`Account` A INNER 
+JOIN Department D ON A.DepartmentID = D.DepartmentID;
+
+
+-- Question 2: Vi?t l?nh d? l?y ra thông tin các account du?c t?o sau ngày 20/03/2020
+SELECT	
+*
+FROM	`Account`
+
+WHERE	CreateDate < '2020-03-20';
+
+-- Question 3: Vi?t l?nh d? l?y ra t?t c? các developer
+SELECT	
+*
+FROM	`Account` A 
+INNER JOIN Position P ON A.PositionID = P.PositionID
+
+WHERE	P.PositionName = 'Dev';
+
+-- Question 4: Vi?t l?nh d? l?y ra danh sách các phòng ban có >3 nhân viên
+SELECT 	D.DepartmentID, DepartmentName, COUNT(A.DepartmentID) AS 'SO LUONG'
+FROM 	`Account` A INNER JOIN Department  D
+ON	D.DepartmentID = A.DepartmentID
+GROUP BY A.DepartmentID
+HAVING 	COUNT(A.DepartmentID)>3;
+
+-- Question 5: Vi?t l?nh d? l?y ra danh sách câu h?i du?c s? d?ng trong d? thi nhi?u nh?t
+SELECT 	Q.QuestionID, Q.Content, Q.CategoryID, Q.TypeID, Q.CreatorID, Q.CreateDate, Count(Q.Content) AS 'SO LUONG'
+FROM		Question Q INNER JOIN ExamQuestion E
+ON			Q.QuestionID = EQ.QuestionID
+GROUP BY	Q.Content

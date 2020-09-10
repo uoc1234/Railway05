@@ -1,0 +1,76 @@
+-- Question_1
+	OK
+-- Question_2
+SELECT DepartmentName
+
+FROM testingsystem.department;
+-- Question_3
+SELECT DepartmentID
+FROM testingsystem.department
+
+WHERE DepartmentName = 'Sale';
+-- Question_4
+SELECT *
+FROM testingsystem.`Account`
+WHERE CHAR_LENGTH(FullName) = (SELECT MAX(CHAR_LENGTH(FullName))
+
+				FROM testingsystem.`account`);
+-- Question_5
+SELECT *
+
+FROM testingsystem.`Account`
+
+WHERE CHAR_LENGTH(FullName) = (SELECT MAX(CHAR_LENGTH(FullName))
+FROM testingsystem.`account`) AND DepartmentID = 3;
+-- Question_6
+SELECT GroupName
+
+FROM testingsystem.`group`
+
+WHERE CreateDate < '2019-12-20';
+-- Question_7
+
+
+-- Question 8
+
+SELECT examID 
+FROM testingsystem.exam
+
+WHERE Duration >= 60 AND CreateDate < '2019-12-20';
+-- Question 9
+
+SELECT * 
+FROM testingsystem.group
+
+ORDER BY CreateDate DESC
+
+LIMIT 5;
+-- Question 10
+SELECT COUNT(AccountID)
+
+FROM testingsystem.`Account`
+
+WHERE DepartmentID = 2;
+-- Question 11
+
+SELECT *
+
+FROM testingsystem.`Account`
+
+WHERE FullName LIKE 'D%o';
+
+
+
+
+-- Question 14
+UPDATE `Account`
+
+SET FullName = 'Nguy?n Bá L?c'
+
+WHERE AccountID = '5';
+-- Question 15
+UPDATE `Account`
+
+SET FullName = 'Nguy?n Bá L?c'
+
+WHERE AccountID = '5';
