@@ -1,4 +1,4 @@
-package TestingSystem_Assignment_2;
+package TestingSystem_Assignment_3;
 
 import java.time.LocalDate;
 import java.util.Iterator;
@@ -6,9 +6,6 @@ import java.util.Iterator;
 //import com.sun.java.util.jar.pack.Instruction.Switch;
 
 public class EX1 {
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		// 1.Department
 		Department saleDepartment = new Department();
@@ -131,9 +128,9 @@ public class EX1 {
 				: "phong ban cua nhan vien nay la" + account3.department.name);
 
 		System.out.println("-------Question 4 ------");
-//Question 4
-//		System.out.println(account1.Position.positionName == PositionName.DEV ? "Đây là Developer"
-//				: "Người này không phải là Developer");
+//// Question 4
+		System.out.println(account1.Position.positionName == PositionName.DEV ? "�?ây là Developer"
+				: "Ngư�?i này không phải là Developer");
 
 		// Question 5
 		System.out.println("-------Question 5 ------");
@@ -226,7 +223,7 @@ public class EX1 {
 //	System.out.println("thông tin account thứ " +i+1+"là: ");
 //	System.out.println("email là: "+ Accounts[i].email);
 //	System.out.println("fullname là: "+ Accounts[i].fullName);
-//	System.out.println("phòng ban của họ là: "+Accounts[i].department);
+//	System.out.println("phòng ban của h�? là: "+Accounts[i].department);
 //}
 //}
 
@@ -257,13 +254,10 @@ System.out.println("-------Question 16 ------");
 System.out.println("-------Question 17 ------");	
 	
 	
-//Question 6 (EX2)
-System.out.println("-------Question 6 (EX 2) ------");
-
-System.out.printf("%s %31s %25s \n", "Email", "Full name", "ID");
-System.out.printf("%s %25s %20d \n", account1.email, account1.username, account1.accountID);
-System.out.printf("%s %25s %18d \n", account2.email, account2.username, account2.accountID);
-System.out.printf("%s %25s %17d \n", account3.email, account3.username, account3.accountID);
+	
+	
+	
+	
 	
 	
 	
