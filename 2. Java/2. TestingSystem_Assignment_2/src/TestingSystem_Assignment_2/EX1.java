@@ -180,13 +180,13 @@ public class EX1 {
 
 //Question 8
 		System.out.println("-------Question 8 ------");
-		
+
 //			System.out.println("Email: " + account.email);
 //			System.out.println("FullName: " + account.fullname);
 //			System.out.println("Name Department: " + account.department.name);
 //		}
 //Question 9
-				System.out.println("-------Question 9 ------");
+		System.out.println("-------Question 9 ------");
 
 //				{
 //					System.out.println("ID Department: " + department.id);
@@ -194,24 +194,23 @@ public class EX1 {
 //				}
 
 //Question 10
-				System.out.println("-------Question 10 ------");				
+		System.out.println("-------Question 10 ------");
 //for (int i = 0; i < accounts.length; i++) {
 //System.out.println("Thông tin account thứ " + (i + 1) + " là");
 //System.out.println("Email: " + accounts[i].email);
 //System.out.println("Fullname: " + accounts[i].fullname);
 //System.out.println("Department: " + accounts[i].department.name);
 //}
-			
-				
+
 //Question 11
-				System.out.println("-------Question 11 ------");				
+		System.out.println("-------Question 11 ------");
 //for (int i = 0; i < department.length; i = i +1) {
 //System.out.println("thông tin phòng ban thứ " +i+1+"là: ");
 //System.out.println("ID: : "+department[i].departmentID);
 //System.out.println("Name: "+department[i].departmentName);}			
-				
+
 //Question 12
-				System.out.println("-------Question 12 ------");				
+		System.out.println("-------Question 12 ------");
 //for (int i = 0; i < 2; i = i +1) {
 //System.out.println("Thông tin account thứ " + (i + 1) + " là");
 //System.out.println("Email: " + accounts[i].email);
@@ -220,7 +219,7 @@ public class EX1 {
 //}		
 
 //Question 13
-				System.out.println("-------Question 13 ------");				
+		System.out.println("-------Question 13 ------");
 //for (int i = 0; i < Accounts.length; i++) {
 //if(i != 1) {
 //	System.out.println("thông tin account thứ " +i+1+"là: ");
@@ -230,9 +229,8 @@ public class EX1 {
 //}
 //}
 
-	
 //Question 14
-				System.out.println("-------Question 14 ------");				
+		System.out.println("-------Question 14 ------");
 //for (int i = 0; i < Accounts.length; i = i +1) {
 //if(Accounts[i].accountID <4) {
 //System.out.println("thông tin account thứ " +i+1+"là: ");
@@ -241,40 +239,27 @@ public class EX1 {
 //System.out.println("phòng ban : "+Accounts[i].department);
 //}
 //}				
-				
+
 //Question 15
-System.out.println("-------Question 15 ------");										
+		System.out.println("-------Question 15 ------");
 //i = 2;
 //while (i <= 20) {
 //	System.out.println(i);
 //	i = i + 2;
 //}		
-	
-	
-//Question 16
-System.out.println("-------Question 16 ------");	
-//Question 17
-System.out.println("-------Question 17 ------");	
-	
-	
-//Question 6 (EX2)
-System.out.println("-------Question 6 (EX 2) ------");
 
-System.out.printf("%s %31s %25s \n", "Email", "Full name", "ID");
-System.out.printf("%s %25s %20d \n", account1.email, account1.username, account1.accountID);
-System.out.printf("%s %25s %18d \n", account2.email, account2.username, account2.accountID);
-System.out.printf("%s %25s %17d \n", account3.email, account3.username, account3.accountID);
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
+//Question 16
+		System.out.println("-------Question 16 ------");
+//Question 17
+		System.out.println("-------Question 17 ------");
+
+//Question 6 (EX2)
+		System.out.println("-------Question 6 (EX 2) ------");
+
+		System.out.printf("%s %31s %25s \n", "Email", "Full name", "ID");
+		System.out.printf("%s %25s %20d \n", account1.email, account1.username, account1.accountID);
+		System.out.printf("%s %25s %18d \n", account2.email, account2.username, account2.accountID);
+		System.out.printf("%s %25s %17d \n", account3.email, account3.username, account3.accountID);
+
+	}
 }

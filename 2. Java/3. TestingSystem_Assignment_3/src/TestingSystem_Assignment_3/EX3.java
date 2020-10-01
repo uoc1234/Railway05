@@ -1,30 +1,36 @@
 package TestingSystem_Assignment_3;
 
-import java.util.Locale;
+import java.util.Random;
+import java.util.Scanner;
 
 public class EX3 {
+	private static final String Interger = null;
+
 	public static void main(String[] args) {
 //Question 1
 		System.out.println("-------Question 1 ------");
-//				In ra thông tin Exam thứ 1 và property create date sẽ được format theo định 
-//				dạng vietnamese
-
+//		Khởi tạo lương có datatype là Integer có giá trị bằng 5000.
+//		Sau đó convert lương ra float và hiển thị lương lên màn hình (với số 
+//		float có 2 số sau dấu thập phân) 
+		int luong = 5000;
+		float converluong = (float) luong;
+		String converluong2 = String.format("%.2f", converluong);
+		System.out.println(converluong2);
 //Question 2
 		System.out.println("-------Question 2 ------");
-//				In ra thông tin: Exam đã tạo ngày nào theo định dạng 
-//				Năm – tháng – ngày – gi�? – phút – giây
-
+//		Khai báo 1 String có value = "1234567"
+//		Hãy convert String đó ra số int
+		String sodangchu = "1234567";
+		int convertso2 = Integer.parseInt(sodangchu);
+		System.out.println(convertso2);
 //Question 3
 		System.out.println("-------Question 3 ------");
-//Chỉ in ra năm của create date property trong Question 2	
-
-//Question 4
-		System.out.println("-------Question 4 ------");
-//Chỉ in ra tháng và năm của create date property trong Question 2
-
-//Question 5
-		System.out.println("-------Question 5 ------");
-//Chỉ in ra "MM-DD" của create date trong Question 2
+//		Khởi tạo 1 số Integer có value là chữ "1234567"
+//		Sau đó convert số trên thành datatype int
+		Integer so3 = new Integer(1234567);
+		Integer intobject = 1234567;
+		int convertso3 = intobject.intValue();
+		System.out.println("The integer Value of so3 = " + convertso3);
 
 	}
 }
